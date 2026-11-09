@@ -68,19 +68,9 @@ Ma règle : **l'IA propose, je vérifie**. Secrets hors du contexte, actions des
 
 Un mini-datacenter dans une pièce, qui héberge l'agence, les clients, les agents, le monitoring et le lab cyber.
 
-```mermaid
-flowchart LR
-  I([Internet]) --> CF["Cloudflare<br/>DNS · Tunnels · Access"]
-  CF --> RP["Reverse proxy"]
-  subgraph PVE["Proxmox VE · Dell R630 · 256 GB ECC"]
-    RP --> SVC["LXC / VM<br/>web · API · bots"]
-    SVC --> DB[("SQLite / PostgreSQL")]
-    MON["Prometheus · Grafana · Loki"] -. observe .-> SVC
-    LAB["Lab cyber<br/>AD · Kali · honeypots"]
-    PFS["pfSense (lab)<br/>VLAN · DMZ"] --- LAB
-  end
-  TS["Tailscale<br/>mesh WireGuard"] -. admin .-> SVC
-```
+<p align="center">
+  <img src="https://skin.aq0a11q1.com/api/arch?theme=blueprint" width="100%" alt="Architecture du homelab : Proxmox, pfSense, Tailscale et Cloudflare" />
+</p>
 
 Ce que j'y apprends : un service = un conteneur, une zone = un bridge/VLAN, les secrets ne vont jamais dans Git, et une sauvegarde qui n'a pas été restaurée n'est pas une sauvegarde.
 
@@ -111,7 +101,7 @@ Les cartes en haut de ce README sont générées par un petit service Node.js qu
 
 - Instance : [skin.aq0a11q1.com](https://skin.aq0a11q1.com)
 - Code : [a11q1/gitskin](https://github.com/a11q1/gitskin)
-- Endpoints : `/api/hero`, `/api/stats`, `/api/stack`, `/api/status` — thèmes `blueprint`, `cyber`, `aurora`, `light`
+- Endpoints : `/api/hero`, `/api/arch`, `/api/stats`, `/api/stack`, `/api/status` — thèmes `blueprint`, `cyber`, `aurora`, `light`
 
 ## 07 · Stack
 
