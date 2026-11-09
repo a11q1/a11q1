@@ -1,16 +1,24 @@
-<div align="center">
+<p align="center">
+  <a href="https://skin.aq0a11q1.com">
+    <img src="https://skin.aq0a11q1.com/api/hero?username=a11q1&theme=blueprint" width="100%" alt="Sacha Fromont — systèmes, réseaux, cybersécurité" />
+  </a>
+</p>
 
-# Sacha Fromont
+<p align="center">
+  <a href="https://sacha.sitecreator.shop"><img src="https://img.shields.io/badge/Portfolio-sacha.sitecreator.shop-111827?style=flat-square" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/sacha-fromont-9820213a8/"><img src="https://img.shields.io/badge/LinkedIn-Sacha%20Fromont-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:sacha.fromont@outlook.fr"><img src="https://img.shields.io/badge/Email-sacha.fromont%40outlook.fr-111827?style=flat-square" alt="Email" /></a>
+  <a href="https://skin.aq0a11q1.com"><img src="https://img.shields.io/badge/GitSkin-self--hosted-40e0cf?style=flat-square" alt="GitSkin self-hosted" /></a>
+</p>
 
-**Systèmes & réseaux · cybersécurité · automatisation**
+<p align="center">
+  <img src="https://skin.aq0a11q1.com/api/stats?username=a11q1&theme=blueprint" width="49%" alt="Statistiques GitHub de a11q1" />
+  <img src="https://skin.aq0a11q1.com/api/stack?username=a11q1&theme=blueprint" width="49%" alt="Stack technique de a11q1" />
+</p>
 
-Étudiant en **BTS SIO option SISR** · Fondateur de **[sitecreator.shop](https://sitecreator.shop)** · Homelab Proxmox 24/7
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-sacha.sitecreator.shop-111827?style=flat-square)](https://sacha.sitecreator.shop)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sacha%20Fromont-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sacha-fromont-9820213a8/)
-[![Email](https://img.shields.io/badge/Email-sacha.fromont%40outlook.fr-111827?style=flat-square)](mailto:sacha.fromont@outlook.fr)
-
-</div>
+<p align="center">
+  <sub>Cartes générées par mon service <a href="https://skin.aq0a11q1.com">GitSkin self-hosted</a> · <a href="https://github.com/a11q1/gitskin">code source</a></sub>
+</p>
 
 ---
 
@@ -96,6 +104,14 @@ Je ne publie ni IP, ni secrets, ni données clients. Les détails restent dans l
 
 Le reste (agents, CRM, infra, sites clients) est privé. C'est normal : il y a des données clients et des secrets dedans.
 
+### Le GitSkin self-hosted
+
+Les cartes en haut de ce README sont générées par un petit service Node.js que j'héberge sur mon homelab : zéro dépendance, zéro SaaS, trois endpoints SVG branchés sur l'API GitHub publique.
+
+- Instance : [skin.aq0a11q1.com](https://skin.aq0a11q1.com)
+- Code : [a11q1/gitskin](https://github.com/a11q1/gitskin)
+- Endpoints : `/api/hero`, `/api/stats`, `/api/stack`, `/api/status` — thèmes `blueprint`, `cyber`, `aurora`, `light`
+
 ## 07 · Stack
 
 ```text
@@ -124,6 +140,10 @@ IA          Claude · OpenAI · OpenCode · MCP · RAG · agents · PAIR
 Si tu recrutes, si tu veux échanger sur l'infra, les agents ou la cyber : [LinkedIn](https://www.linkedin.com/in/sacha-fromont-9820213a8/) ou [email](mailto:sacha.fromont@outlook.fr). Je réponds vite.
 
 ---
+
+<p align="center">
+  <img src="https://skin.aq0a11q1.com/api/status?theme=blueprint" width="100%" alt="GitSkin self-hosted — statut du service" />
+</p>
 
 <div align="center">
 
