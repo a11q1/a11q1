@@ -98,7 +98,7 @@ Le reste (agents, CRM, infra, sites clients) est privé. C'est normal : il y a d
 
 ### Le GitSkin self-hosted
 
-Les cartes en haut de ce README sont générées par un petit service Node.js que j'héberge sur mon homelab : zéro dépendance, zéro SaaS, trois endpoints SVG branchés sur l'API GitHub publique.
+Les cartes en haut de ce README sont générées par un petit service Node.js que j'héberge sur mon homelab : zéro dépendance, zéro SaaS, des endpoints SVG branchés sur l'API GitHub publique.
 
 - Instance : [skin.aq0a11q1.com](https://skin.aq0a11q1.com)
 - Code : [a11q1/gitskin](https://github.com/a11q1/gitskin)
