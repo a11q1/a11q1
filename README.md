@@ -12,8 +12,9 @@
 </p>
 
 <p align="center">
-  <img src="https://skin.aq0a11q1.com/api/stats?username=a11q1&theme=blueprint" width="49%" alt="Statistiques GitHub de a11q1" />
-  <img src="https://skin.aq0a11q1.com/api/stack?username=a11q1&theme=blueprint" width="49%" alt="Stack technique de a11q1" />
+  <img src="https://skin.aq0a11q1.com/api/stats?username=a11q1&theme=blueprint" width="86%" alt="Statistiques GitHub de a11q1" />
+  <br />
+  <img src="https://skin.aq0a11q1.com/api/stack?username=a11q1&theme=blueprint" width="86%" alt="Stack technique de a11q1" />
 </p>
 
 <p align="center">
