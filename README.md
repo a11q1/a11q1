@@ -12,9 +12,9 @@
 </p>
 
 <p align="center">
-  <img src="https://skin.aq0a11q1.com/api/stats?username=a11q1&theme=blueprint" width="86%" alt="Statistiques GitHub de a11q1" />
+  <img src="https://skin.aq0a11q1.com/api/stats?username=a11q1&theme=blueprint&v=2" width="86%" alt="Statistiques GitHub de a11q1" />
   <br />
-  <img src="https://skin.aq0a11q1.com/api/stack?username=a11q1&theme=blueprint" width="86%" alt="Stack technique de a11q1" />
+  <img src="https://skin.aq0a11q1.com/api/stack?username=a11q1&theme=blueprint&v=2" width="86%" alt="Stack technique de a11q1" />
 </p>
 
 <p align="center">
@@ -89,6 +89,7 @@ Je ne publie ni IP, ni secrets, ni données clients. Les détails restent dans l
 
 | Projet | Description | Stack |
 |---|---|---|
+| **[gitskin](https://github.com/a11q1/gitskin)** | Cartes SVG self-hosted pour profil GitHub : hero, architecture, stats et stack | Node.js · Docker · Cloudflare Tunnel |
 | **[pair-universal](https://github.com/a11q1/pair-universal)** | Fork communautaire de NVIDIA Personal AI Router : routage d'inférence local sur GPU NVIDIA, AMD, Intel et Apple Silicon | Go · Electron · React |
 | **[lab-grafana-prometheus](https://github.com/a11q1/lab-grafana-prometheus)** | Stack de supervision complète : métriques, logs, dashboards et alerting | Docker · Prometheus · Grafana · Loki |
 | **[pfsense-honeypot-factory](https://github.com/a11q1/pfsense-honeypot-factory)** | Prototype de déploiement de honeypots isolés en VLAN via l'API Proxmox et pfSense | Bash · Proxmox API · pfSense |
