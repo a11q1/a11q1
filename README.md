@@ -1,25 +1,16 @@
-<p align="center">
-  <a href="https://skin.aq0a11q1.com">
-    <img src="https://skin.aq0a11q1.com/api/hero?username=a11q1&theme=blueprint" width="100%" alt="Sacha Fromont — systèmes, réseaux, cybersécurité" />
-  </a>
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://sacha.sitecreator.shop"><img src="https://img.shields.io/badge/Portfolio-sacha.sitecreator.shop-111827?style=flat-square" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/sacha-fromont-9820213a8/"><img src="https://img.shields.io/badge/LinkedIn-Sacha%20Fromont-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:sacha.fromont@outlook.fr"><img src="https://img.shields.io/badge/Email-sacha.fromont%40outlook.fr-111827?style=flat-square" alt="Email" /></a>
-  <a href="https://skin.aq0a11q1.com"><img src="https://img.shields.io/badge/GitSkin-self--hosted-40e0cf?style=flat-square" alt="GitSkin self-hosted" /></a>
-</p>
+# Sacha Fromont
 
-<p align="center">
-  <img src="https://skin.aq0a11q1.com/api/stats?username=a11q1&theme=blueprint&v=2" width="86%" alt="Statistiques GitHub de a11q1" />
-  <br />
-  <img src="https://skin.aq0a11q1.com/api/stack?username=a11q1&theme=blueprint&v=2" width="86%" alt="Stack technique de a11q1" />
-</p>
+**Systèmes & réseaux · cybersécurité · automatisation**
 
-<p align="center">
-  <sub>Cartes générées par mon service <a href="https://skin.aq0a11q1.com">GitSkin self-hosted</a> · <a href="https://github.com/a11q1/gitskin">code source</a></sub>
-</p>
+Étudiant en **BTS SIO option SISR** · Fondateur de **[sitecreator.shop](https://sitecreator.shop)** · Homelab Proxmox 24/7
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-sacha.sitecreator.shop-111827?style=flat-square)](https://sacha.sitecreator.shop)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sacha%20Fromont-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sacha-fromont-9820213a8/)
+[![Email](https://img.shields.io/badge/Email-sacha.fromont%40outlook.fr-111827?style=flat-square)](mailto:sacha.fromont@outlook.fr)
+
+</div>
 
 ---
 
@@ -68,9 +59,19 @@ Ma règle : **l'IA propose, je vérifie**. Secrets hors du contexte, actions des
 
 Un mini-datacenter dans une pièce, qui héberge l'agence, les clients, les agents, le monitoring et le lab cyber.
 
-<p align="center">
-  <img src="https://skin.aq0a11q1.com/api/arch?theme=blueprint" width="100%" alt="Architecture du homelab : Proxmox, pfSense, Tailscale et Cloudflare" />
-</p>
+```mermaid
+flowchart LR
+  I([Internet]) --> CF["Cloudflare<br/>DNS · Tunnels · Access"]
+  CF --> RP["Reverse proxy"]
+  subgraph PVE["Proxmox VE · Dell R630 · 256 GB ECC"]
+    RP --> SVC["LXC / VM<br/>web · API · bots"]
+    SVC --> DB[("SQLite / PostgreSQL")]
+    MON["Prometheus · Grafana · Loki"] -. observe .-> SVC
+    LAB["Lab cyber<br/>AD · Kali · honeypots"]
+    PFS["pfSense (lab)<br/>VLAN · DMZ"] --- LAB
+  end
+  TS["Tailscale<br/>mesh WireGuard"] -. admin .-> SVC
+```
 
 Ce que j'y apprends : un service = un conteneur, une zone = un bridge/VLAN, les secrets ne vont jamais dans Git, et une sauvegarde qui n'a pas été restaurée n'est pas une sauvegarde.
 
@@ -89,20 +90,11 @@ Je ne publie ni IP, ni secrets, ni données clients. Les détails restent dans l
 
 | Projet | Description | Stack |
 |---|---|---|
-| **[gitskin](https://github.com/a11q1/gitskin)** | Cartes SVG self-hosted pour profil GitHub : hero, architecture, stats et stack | Node.js · Docker · Cloudflare Tunnel |
 | **[pair-universal](https://github.com/a11q1/pair-universal)** | Fork communautaire de NVIDIA Personal AI Router : routage d'inférence local sur GPU NVIDIA, AMD, Intel et Apple Silicon | Go · Electron · React |
 | **[lab-grafana-prometheus](https://github.com/a11q1/lab-grafana-prometheus)** | Stack de supervision complète : métriques, logs, dashboards et alerting | Docker · Prometheus · Grafana · Loki |
 | **[pfsense-honeypot-factory](https://github.com/a11q1/pfsense-honeypot-factory)** | Prototype de déploiement de honeypots isolés en VLAN via l'API Proxmox et pfSense | Bash · Proxmox API · pfSense |
 
 Le reste (agents, CRM, infra, sites clients) est privé. C'est normal : il y a des données clients et des secrets dedans.
-
-### Le GitSkin self-hosted
-
-Les cartes en haut de ce README sont générées par un petit service Node.js que j'héberge sur mon homelab : zéro dépendance, zéro SaaS, des endpoints SVG branchés sur l'API GitHub publique et mon infrastructure.
-
-- Instance : [skin.aq0a11q1.com](https://skin.aq0a11q1.com)
-- Code : [a11q1/gitskin](https://github.com/a11q1/gitskin)
-- Endpoints : `/api/hero`, `/api/arch`, `/api/stats`, `/api/stack`, `/api/status` — thèmes `blueprint`, `cyber`, `aurora`, `light`
 
 ## 07 · Stack
 
@@ -132,10 +124,6 @@ IA          Claude · OpenAI · OpenCode · MCP · RAG · agents · PAIR
 Si tu recrutes, si tu veux échanger sur l'infra, les agents ou la cyber : [LinkedIn](https://www.linkedin.com/in/sacha-fromont-9820213a8/) ou [email](mailto:sacha.fromont@outlook.fr). Je réponds vite.
 
 ---
-
-<p align="center">
-  <img src="https://skin.aq0a11q1.com/api/status?theme=blueprint" width="100%" alt="GitSkin self-hosted — statut du service" />
-</p>
 
 <div align="center">
 
